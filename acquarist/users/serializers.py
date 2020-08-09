@@ -3,11 +3,10 @@ from .models import User
 
 
 class UserSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = User
-        fields = ('id', 'username', 'email', 'first_name', 'last_name')
-        read_only_fields = ('username', )
+        fields = ('id', 'username', 'email', 'first_name', 'last_name',
+                  'country', 'region', 'address', 'about', 'avatar')
 
 
 class CreateUserSerializer(serializers.ModelSerializer):
