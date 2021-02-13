@@ -29,6 +29,7 @@ class Common(Configuration):
         'django_extensions',
         'django_rest_passwordreset',
         'corsheaders',
+        'drf_yasg',
         # Your apps
         'acquarist.users',
         'acquarist.aquariums',
